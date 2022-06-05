@@ -1,0 +1,30 @@
+[package]
+name = "test-cache"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+
+[target.'cfg(windows)'.dependencies.windows-sys]
+version = "0.36.1"
+features = [
+    "Win32_System_Console",
+    "Win32_System_Threading",
+    "Win32_Foundation",
+    "Win32_System_LibraryLoader",
+]
+
+
+[target.'cfg(not(windows))'.dependencies]
+nix = { version = "0.24.1", features = ["signal", "sched"] } # https://docs.rs/nix/0.24.1/nix/index.html#features
+
+
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1

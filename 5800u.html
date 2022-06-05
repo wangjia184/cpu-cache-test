@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chalk-column | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/black.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"autoMarginOffset": 40,
+					"marginRight": 70,
+					"marginTop": 70,
+					"startDuration": 1,
+					"fontSize": 13,
+					"theme": "black",
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 0.9,
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "5800U"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 0.9,
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"type": "column",
+							"valueField": "M1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "ms"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "16GB",
+							"5800U": "21415",
+							"M1": null
+						},
+						{
+							"category": "8GB",
+							"5800U": "18896",
+							"M1": null
+						},
+						{
+							"category": "4GB",
+							"5800U": "14865",
+							"M1": null
+						},
+						{
+							"category": "2GB",
+							"5800U": "12732",
+							"M1": null
+						},
+						{
+							"category": "1GB",
+							"5800U": "12215",
+							"M1": null
+						},
+						{
+							"category": "512MB",
+							"5800U": "11945",
+							"M1": null
+						},
+						{
+							"category": "256MB",
+							"5800U": "11585",
+							"M1": null
+						},
+						{
+							"category": "128MB",
+							"5800U": "10952",
+							"M1": null
+						},
+						{
+							"category": "64MB",
+							"5800U": "9813",
+							"M1": null
+						},
+						{
+							"category": "32MB",
+							"5800U": "7334",
+							"M1": null
+						},
+						{
+							"category": "16MB",
+							"5800U": "3160",
+							"M1": null
+						},
+						{
+							"category": "8MB",
+							"5800U": "1584",
+							"M1": null
+						},
+						{
+							"category": "4MB",
+							"5800U": "1475",
+							"M1": null
+						},
+						{
+							"category": "2MB",
+							"5800U": "1339",
+							"M1": null
+						},
+						{
+							"category": "1MB",
+							"5800U": "1084",
+							"M1": null
+						},
+						{
+							"category": "512KB",
+							"5800U": "713",
+							"M1": null
+						},
+						{
+							"category": "256KB",
+							"5800U": "638",
+							"M1": null
+						},
+						{
+							"category": "128KB",
+							"5800U": "610",
+							"M1": null
+						},
+						{
+							"category": "64KB",
+							"5800U": "568",
+							"M1": null
+						},
+						{
+							"category": "32KB",
+							"5800U": "474",
+							"M1": null
+						},
+						{
+							"category": "16KB",
+							"5800U": "474",
+							"M1": null
+						},
+						{
+							"category": "8KB",
+							"5800U": "473",
+							"M1": null
+						},
+						{
+							"category": "4KB",
+							"5800U": "484",
+							"M1": null
+						},
+						{
+							"category": "2KB",
+							"5800U": "490",
+							"M1": null
+						},
+						{
+							"category": "1KB",
+							"5800U": "493",
+							"M1": null
+						},
+						{
+							"category": "512B",
+							"5800U": "495",
+							"M1": null
+						},
+						{
+							"category": "256B",
+							"5800U": "496",
+							"M1": null
+						},
+						{
+							"category": "128B",
+							"5800U": "496",
+							"M1": null
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #222222;" ></div>
+	</body>
+</html>
